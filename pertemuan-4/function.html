@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // BAB I FUNCTION
+      // 1.1 pendefinisian Function
+      function salam() {
+        console.log("halo selamat pagi");
+      }
+
+      salam();
+      //   1.2 variabel using function
+      let halo = function () {
+        console.log("halo semuaa");
+      };
+
+      halo();
+
+      //   1.3 hoisting
+      akuGue();
+      // ini function yang dipanggil
+      // sebelum pembuatan function itu sendiri
+      function akuGue() {
+        console.log("gue adalah aku");
+      }
+
+      //   1.4 method
+      let orang = {
+        nama: "yamin gibrig",
+        usia: 30,
+        perkenalan: function () {
+          console.log("halo nama saya" + this.nama);
+        },
+      };
+
+      orang.perkenalan();
+
+      //   1.5 function dengan parameter
+      function iniContoh(parameter) {
+        console.log("ini adalah paramater " + parameter);
+      }
+
+      iniContoh("jamal");
+
+      //   1.6 function lebih dari 1 parameter
+
+      function example(angka1, angka2, angka3) {
+        console.log(angka1 * angka2 + angka3);
+      }
+
+      example(10, 20, 45);
+
+      //   1.7 function di dalam function
+      function running(param) {
+        param();
+      }
+
+      running(function () {
+        console.log("ini function di dalam function");
+      });
+    </script>
+  </body>
+</html>
